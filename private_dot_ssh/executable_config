@@ -1,0 +1,38 @@
+Host *.lars.d.umn.edu
+    User jnowaczek
+    IdentityFile ~/.ssh/omnyaLARS
+
+Host umdcyl.d.umn.edu
+    User jnowaczek
+    IdentityFile ~/.ssh/omnyaLARS
+
+Host *.deterlab.net
+	IdentityFile ~/.ssh/DETER-jnowacze
+	IdentityFile ~/.ssh/DETER-umdsecta
+
+IdentityFile ~/.ssh/id_rsa
+IdentityFile ~/.ssh/omnyaEC2
+IdentityFile ~/.ssh/github_rsa
+IdentityFile ~/.ssh/github_com_rsa
+IdentityFile ~/.ssh/lars_rsa
+
+Host julian.nowaczek.com
+    User ubuntu
+    IdentityFile ~/.ssh/omnyaEC2
+
+Host akka
+	User nowac024
+	HostName akka.d.umn.edu
+
+Host basswood
+    User jnowaczek
+    HostName basswood.d.umn.edu
+    IdentityFile ~/.ssh/lars_rsa
+
+Host csdev*
+	User nowac024
+	Hostname %h.d.umn.edu
+
+Host github.com
+	User git
+	IdentityFile ~/.ssh/github_com_rsa
